@@ -180,7 +180,7 @@ input {
     }
 
     &.scrolled {
-        background-color: rgba(51, 51, 51, 0.8);
+        background-color: rgba(253, 143, 0, 0.8);
     }
 
     &__burger {
@@ -245,6 +245,10 @@ input {
 
         @media (max-width:1024px) {
             padding-right: 0;
+        }
+
+        @media (max-width:576px) {
+            align-items: center;
         }
 
     }
@@ -428,6 +432,33 @@ input {
             height: auto;
             width: 100%;
             object-fit: contain;
+        }
+    }
+
+    /* part 2 */
+
+    &__part2 {
+        &-link {
+            grid-area: picture;
+            position: absolute;
+            display: flex;
+            width: 40%;
+            height: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 20px rgba(253, 143, 0, 0.7), 0 0 40px rgba(253, 143, 0, 0.5);
+            z-index: 10;
+
+            @media (max-width:1400px) {
+                display: none;
+            }
+        }
+
+        &-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
         }
     }
 }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tets Morozov Video form PNG</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .overlay img {
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay__bg {
+            width: 100%;
+            height: 100vh;
+            background-color: #050505;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video autoplay muted loop>
+            <source src="./video/video.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        <div class="overlay">
+            <img src="./images/part_22.png" alt="Overlay Image">
+            <div class="overlay__bg"></div>
+        </div>
+    </div>
+</body>
+</html>
