@@ -848,6 +848,7 @@ input {
         }
 
         &:disabled {
+            opacity: .8;
             cursor: not-allowed;
         }
     }
