@@ -344,6 +344,8 @@ input {
             width: 48px;
             height: 48px;
             color: var(--orange00);
+            border-radius: 50%;
+            box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
         }
 
         &-text {
@@ -578,6 +580,8 @@ input {
             width: 60px;
             height: 60px;
             color: var(--orange00);
+            border-radius: 50%;
+            box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
         }
 
         &-desc {
@@ -705,7 +709,7 @@ input {
         @media (max-width:576px) {
             width: 100%;
             margin: 0;
-            padding: 30px 5px;
+            padding: 30px 15px;
         }
     }
 
@@ -719,7 +723,8 @@ input {
         }
 
         @media (max-width:576px) {
-            padding: 13px 5px 13px 5px;
+            width: 100%;
+            padding: 13px 8px 13px 8px;
         }
 
         &::placeholder {

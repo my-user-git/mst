@@ -344,6 +344,8 @@ input {
   width: 48px;
   height: 48px;
   color: var(--orange00);
+  border-radius: 50%;
+  box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
 }
 .hero__item-text {
   display: flex;
@@ -574,6 +576,8 @@ input {
   width: 60px;
   height: 60px;
   color: var(--orange00);
+  border-radius: 50%;
+  box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
 }
 .mission__item-desc {
   font-family: var(--font-family);
@@ -693,7 +697,7 @@ input {
   .form__form {
     width: 100%;
     margin: 0;
-    padding: 30px 5px;
+    padding: 30px 15px;
   }
 }
 .form__input {
@@ -708,7 +712,8 @@ input {
 }
 @media (max-width: 576px) {
   .form__input {
-    padding: 13px 5px 13px 5px;
+    width: 100%;
+    padding: 13px 8px 13px 8px;
   }
 }
 .form__input::-moz-placeholder {
